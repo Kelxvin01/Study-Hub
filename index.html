@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Classes</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            padding: 15px;
+        }
+
+        .video-card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        .video-card h2 {
+            margin-top: 0;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🎓 My Classes</h1>
+        <p>Welcome to your learning app</p>
+    </header>
+
+    <div class="container">
+
+        <div class="video-card">
+            <h2>Demo Class</h2>
+            <p>Chapter 1 </p>
+
+          <button onclick="window.location.href='chapter1.html'">
+    ▶ Open Chapter
+          </button>
+
+<div id="player" style="display:none; margin-top:15px;">
+    <video id="videoPlayer" controls width="100%">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+</div>
+        </div>
+<div class="video-card">
+    <h2>Chapter 2</h2>
+    <p>Chapter 2 • Video Class</p>
+    <button onclick="window.location.href='video2.html'">
+        Watch Video
+    </button>
+</div>
+    </div>
+<script>
+function playVideo() {
+    document.getElementById("player").style.display = "block";
+    document.getElementById("videoPlayer").play();
+}
+</script>
+</body>
+</html>
